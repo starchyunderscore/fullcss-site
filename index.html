@@ -3,10 +3,16 @@
     <head>
         <style>
             body{background:#000;color:#fff;}
-            span::after{content:"hello";width:100%;text-align:center;}
+            body::before,body::after{display:block;margin:auto;width:80%;max-width:150rem;}
+            body::before{text-align:center;font-size:3em;
+                content:"Welcome to this website";
+                }
+            body::after{text-align:justify;font-size:1rem;
+                content:"Unfortunately it does not seem you can stack ::before or ::after, so I will just have to deal with having only two elements.";
+                }
         </style>
     </head>
     <body>
-        <span></span>
+        
     </body>
 </html>
